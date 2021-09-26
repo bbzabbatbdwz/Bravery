@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - CSS Fizzy Button</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="mZihitt9BOdxEV6DmMoHCdqGiRqVmbfwV+mdZ+0cZUa8mCZc/KJloSyaUSFp0sF0XcJScKpdjuqtDQ5ymIar4Q==" />
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/embed/embed-42b7bfc03bd3f473aa580a69878917e48fc23057d459fb483559b44a952b356d.css" />
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #3d3d3e;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #3d3d3e;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #666666;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #888888;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #dddddd;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #ffffff;
+    }
+
+    .embed-nav svg {
+      stroke: #ffffff !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="https://cpwebassets.codepen.io/assets/editor/themes/twilight-a51132346b4bb8d68e88b0537e831f4d31c664d84b268321716a24f137a33cfb.css" />
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #555555; --borderWidth: 1px;" class="codepen-embed-body  static">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="#html-box" role="button" aria-pressed="false">
+Haml
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="#css-box" role="button" aria-pressed="false">
+SCSS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/webLeister/pen/XwGENz" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z" />
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24" />
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<pre tabindex="0"><code data-lang="haml" id="actual-html-code">.button
+    %h1 Fizzy CSS Button
+    %h2 With super fizzy particle action
+    %a{:href =&gt; &#39;https://www.codepen.io/jcoulterdesign&#39;}
+        %i.ion-social-codepen
+        %span More Codepen shenanigans
+    %input#button{:type =&gt; &#39;checkbox&#39;}
+    %label{:for =&gt; &#39;button&#39;}
+        .button_inner.q
+            %i.l.ion-log-in
+            %span.t Downloads
+            %span 
+                %i.tick.ion-checkmark-round
+            .b_l_quad
+                -(1..52).each do
+                    .button_spots
+    
+    </code></pre>
+<a href="#0" id="view-html-compiled-button" class="action-button bottom right view-compiled-button" data-type="html">
+View Compiled
+</a>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code">@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700,500,400italic,500italic,700italic,300italic);
+
+body{
+    background: #2C3940;
+    overflow:hidden;
+    font-family: &#39;Fira Sans&#39;, sans-serif;
+    a{
+        color:white;
+        padding-top:20px;
+        font-size:10px;
+        opacity:0.6;
+        position:relative;
+        top:10px;
+        transition:all .3s;
+        font-weight:100;
+        text-decoration:none;
+        &amp;:hover{
+            opacity:1;
+
+        }
+        i.l{
+            margin-right:3px;
+        }
+    }
+}
+input{
+    display:none;
+}
+
+input:checked + label{
+    .button_inner{
+        background:transparent;
+        transform:rotate(90deg);
+        width:100px;
+        border-radius:100px;
+        box-shadow:0px 0px 0px 440px rgba(0,0,0,0);
+        animation: finalbox .4s 4.42s cubic-bezier(0.39, 2.01, 0.27, 0.75) forwards;
+        span.t{
+            opacity:0;
+            top:20px;
+        }
+    }
+    i.l{
+        left:14px;
+        opacity:1;
+        top:11px;
+        animation:down 1s .25s infinite,final .2s 4s forwards;
+    }
+    .tick{
+        position: absolute;
+        left: 2px;
+        right: 0;
+        transform:scale(0) rotate(-90deg);
+        color: #00C1FC;
+        top: 11px;
+        margin: auto;
+        font-size: 22px;
+        animation: tick .3s 4.7s forwards;
+    }
+    .button_spots{
+        opacity:1;
+        @for $i from 0 through 60{
+            &amp;:nth-of-type(#{$i}){
+                top:(16px - random(10)) - 0 !important;
+                left:-34px  !important;
+                opacity:0;
+                padding:random(20)/4 + 2 + px !important;
+                animation:spew 1s .3s forwards,rotate 4s + random(4)/10 .25s + random(12)/10 linear infinite ,final .2s 4s forwards,spot-#{$i} .7s .4/random(10) + random(10)/10 + 10s linear infinite !important;
+            }
+        }
+
+    }
+}
+.tick{
+    position:absolute;
+    left:-40;
+    right:0;
+    transform:scale(0);
+    margin:auto;
+    font-size:22px;
+}
+.button{
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    margin:auto;
+    text-align:Center;
+    height:360px;
+    width:200px;
+    transform:translateY(-50%);
+    h1{
+        font-weight:100;
+        color:White;
+        font-size:24px;
+        margin:0;
+        text-transform:uppercase;
+    }
+    h2{
+        font-weight:100;
+        color:#00C4FF;
+        opacity:1;
+        font-size:14px;
+        margin:4px 0px 0px 0px;
+    }
+    .b_l_quad .button_spots{
+        @for $i from 1 through 20{
+            &amp;:nth-child(#{$i}){
+                padding:random(3) + 2 + px;
+                left: -25 + ($i * 12) + px;
+                top: 50 + px;
+            }
+        }
+        @for $i from 20 through 40{
+            &amp;:nth-child(#{$i}){
+                padding:random(3) + 2 + px;
+                left: -255 + ($i * 12) + px;
+                top: -12 + px;
+            }
+        }
+        @for $i from 40 through 46{
+            &amp;:nth-child(#{$i}){
+                padding:random(3) + 2 + px;
+                left: 204px;
+                top: -488 + ($i * 12) + px;
+            }
+        }
+
+        @for $i from 46 through 52{
+            &amp;:nth-child(#{$i}){
+                padding:random(3) + 2 + px;
+                left: -10px;
+                top: -568 + ($i * 12) + px;
+            }
+        }
+    }
+    .button_spots{
+        position:absolute;
+        border-radius:100px;
+        background:green;
+        opacity:0;
+        animation:opacity 1s;
+        @for $i from 1 through 52{
+            &amp;:nth-of-type(#{$i}){
+                transform-origin:90px - random(10) 20px - random(10);
+                background:hsla(350 + random(399) ,57% - random(10) ,65%,1);
+                box-shadow:0px 0px 10px rgba(255,255,255,0.12);
+                transition:all 1s + random(10)/10;
+            }
+        }
+    }
+    &amp;_inner{
+        //overflow:hidden;
+        border-radius:2px;
+        position:absolute;
+        width:200px;
+        height:50px;
+        left:0;
+        right:0;
+        top:50%;
+        margin:auto;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
+        font-weight: 100;
+        font-size: 12px;
+        cursor:pointer;
+        border: 2px solid #FFFFFF;
+        color: white;
+        text-align: Center;
+        transition:all .3s,box-shadow .2s,transform .2s .2s;
+        span.t{
+            position:relative;
+            top:6px;
+            opacity:1;
+            left:-10px;
+            transition:left .4s .1s;
+
+
+        }
+        i.l{
+            position: relative;
+            left: -19px;
+            top: 20px;
+            color: #00C4FF;
+            font-size: 25px;
+            opacity: 0;
+            transition: left .3s 0s,top .3s 0s,opacity .3s 0s;
+        }
+        &amp;:hover{
+            color:#2C3940;
+            background: white;
+            box-shadow: 0px 17px 18px -14px rgba(0, 0, 0, 0.08);
+            span.t{
+                left:16px;
+                transition:left .4s;
+            }
+            i.l{
+                top:12px;
+                opacity:1;
+                transition: left .3s 0s,top .3s .1s,opacity .3s .1s;
+            }
+        }
+        &amp;:hover .button_spots{
+            @for $i from 1 through 19{
+                &amp;:nth-of-type(#{$i}){
+                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+                }
+            }
+            @for $i from 20 through 40{
+                &amp;:nth-of-type(#{$i}){
+                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+                }
+            }
+            @for $i from 40 through 46{
+                &amp;:nth-of-type(#{$i}){
+                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+                }
+            }
+            @for $i from 46 through 54{
+                &amp;:nth-of-type(#{$i}){
+                    animation: spot-#{$i} .7s .4/random(10) + random(10)/10 + s linear infinite;
+                }
+            }
+        }
+    }
+}
+
+@for $i from 1 through 20{
+    @keyframes spot-#{$i}{
+        from{opacity:0;}
+        to{transform:translateY(30px) translatex(-20px + $i*2);opacity:.6;}
+    }
+}
+@for $i from 20 through 40{
+    @keyframes spot-#{$i}{
+        from{opacity:0;}
+        to{transform:translateY(-30px) translatex(-50px + $i*2);opacity:.6;}
+    }
+}
+@for $i from 40 through 45{
+    @keyframes spot-#{$i}{
+        from{opacity:0;}
+        to{transform:translateY(-86px + $i*2) translatex(40px);opacity:.6;}
+    }
+}
+@for $i from 46 through 54{
+    @keyframes spot-#{$i}{
+        from{opacity:0;}
+        to{transform:translateY(-99px + $i*2) translatex(-40px);opacity:.6;}
+    }
+}
+
+@keyframes opacity{
+    from{}
+    to{opacity:0;}
+}
+
+@keyframes rotate{
+    from{opacity:.8}
+    to{transform:rotate(360deg);opacity:.8}
+}
+
+@keyframes down{
+    from{left:10px;}
+    to{left:57px;}
+}
+
+@keyframes spew{
+    from{opacity:0;}
+    to{opacity:0.8;}
+}
+
+@keyframes final{
+    from{opacity:1;}
+    to{opacity:0;}
+}
+@keyframes finalbox{
+    from{}
+    to{width:50px;}
+}
+@keyframes tick{
+    from{}
+    to{transform:scale(1) rotate(-90deg)}
+}</code></pre>
+<a href="#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowfullscreen="true" allowpaymentrequest="true" allowTransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for CSS Fizzy Button" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for CSS Fizzy Button" data-src="https://cdpn.io/webLeister/fullembedgrid/XwGENz?animations=run&type=embed" src="https://cdpn.io/webLeister/fullembedgrid/XwGENz?animations=run&type=embed">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/webLeister" target="_blank" rel="noopener"><img src="https://gravatar.com/avatar/7573d00ad14d69f84f9a5f215f7bd4cd?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;fit=crop&amp;format=auto&amp;height=256&amp;version=0&amp;width=256" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/webLeister" target="_blank" rel="noopener">Jürgen Leister</a> on <a href="https://codepen.io" target="_blank" rel="noopener">CodePen</a>.
+It is a fork of <a href="https://cdpn.io/jcoulterdesign/fullpage/xVJWvz?default-tab=result&amp;embed-version=2&amp;height=600">this Pen.</a>
+</p>
+<p>
+<a href="/webLeister" target="_blank" rel="noopener" class="about-user-more">
+See more by @webLeister on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<ol class="list-of-resources">
+<li>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css</a>
+</li>
+</ol>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script nonce="AHp843tFglI=">
+    __processedPen = {"html":"&lt;div class=&#39;button&#39;&gt;\n  &lt;h1&gt;Fizzy CSS Button&lt;/h1&gt;\n  &lt;h2&gt;With super fizzy particle action&lt;/h2&gt;\n  &lt;a href=&#39;https://www.codepen.io/jcoulterdesign&#39;&gt;\n    &lt;i class=&#39;ion-social-codepen&#39;&gt;&lt;/i&gt;\n    &lt;span&gt;More Codepen shenanigans&lt;/span&gt;\n  &lt;/a&gt;\n  &lt;input id=&#39;button&#39; type=&#39;checkbox&#39;&gt;\n  &lt;label for=&#39;button&#39;&gt;\n    &lt;div class=&#39;button_inner q&#39;&gt;\n      &lt;i class=&#39;l ion-log-in&#39;&gt;&lt;/i&gt;\n      &lt;span class=&#39;t&#39;&gt;Downloads&lt;/span&gt;\n      &lt;span&gt;\n        &lt;i class=&#39;tick ion-checkmark-round&#39;&gt;&lt;/i&gt;\n      &lt;/span&gt;\n      &lt;div class=&#39;b_l_quad&#39;&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n        &lt;div class=&#39;button_spots&#39;&gt;&lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/label&gt;\n&lt;/div&gt;","css":"@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700,500,400italic,500italic,700italic,300italic);\nbody {\n  background: #2C3940;\n  overflow: hidden;\n  font-family: &quot;Fira Sans&quot;, sans-serif;\n}\nbody a {\n  color: white;\n  padding-top: 20px;\n  font-size: 10px;\n  opacity: 0.6;\n  position: relative;\n  top: 10px;\n  transition: all 0.3s;\n  font-weight: 100;\n  text-decoration: none;\n}\nbody a:hover {\n  opacity: 1;\n}\nbody a i.l {\n  margin-right: 3px;\n}\n\ninput {\n  display: none;\n}\n\ninput:checked + label .button_inner {\n  background: transparent;\n  transform: rotate(90deg);\n  width: 100px;\n  border-radius: 100px;\n  box-shadow: 0px 0px 0px 440px rgba(0, 0, 0, 0);\n  -webkit-animation: finalbox 0.4s 4.42s cubic-bezier(0.39, 2.01, 0.27, 0.75) forwards;\n          animation: finalbox 0.4s 4.42s cubic-bezier(0.39, 2.01, 0.27, 0.75) forwards;\n}\ninput:checked + label .button_inner span.t {\n  opacity: 0;\n  top: 20px;\n}\ninput:checked + label i.l {\n  left: 14px;\n  opacity: 1;\n  top: 11px;\n  -webkit-animation: down 1s 0.25s infinite, final 0.2s 4s forwards;\n          animation: down 1s 0.25s infinite, final 0.2s 4s forwards;\n}\ninput:checked + label .tick {\n  position: absolute;\n  left: 2px;\n  right: 0;\n  transform: scale(0) rotate(-90deg);\n  color: #00C1FC;\n  top: 11px;\n  margin: auto;\n  font-size: 22px;\n  -webkit-animation: tick 0.3s 4.7s forwards;\n          animation: tick 0.3s 4.7s forwards;\n}\ninput:checked + label .button_spots {\n  opacity: 1;\n}\ninput:checked + label .button_spots:nth-of-type(0) {\n  top: 7px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 1.05s linear infinite, final 0.2s 4s forwards, spot-0 0.7s 10.58s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 1.05s linear infinite, final 0.2s 4s forwards, spot-0 0.7s 10.58s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(1) {\n  top: 6px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.65s linear infinite, final 0.2s 4s forwards, spot-1 0.7s 10.3333333333s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.65s linear infinite, final 0.2s 4s forwards, spot-1 0.7s 10.3333333333s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(2) {\n  top: 12px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.05s linear infinite, final 0.2s 4s forwards, spot-2 0.7s 11.1s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.05s linear infinite, final 0.2s 4s forwards, spot-2 0.7s 11.1s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(3) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.95s linear infinite, final 0.2s 4s forwards, spot-3 0.7s 10.7444444444s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.95s linear infinite, final 0.2s 4s forwards, spot-3 0.7s 10.7444444444s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(4) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 7px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.35s linear infinite, final 0.2s 4s forwards, spot-4 0.7s 10.38s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.35s linear infinite, final 0.2s 4s forwards, spot-4 0.7s 10.38s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(5) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.15s linear infinite, final 0.2s 4s forwards, spot-5 0.7s 11.0666666667s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.15s linear infinite, final 0.2s 4s forwards, spot-5 0.7s 11.0666666667s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(6) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 1.25s linear infinite, final 0.2s 4s forwards, spot-6 0.7s 10.18s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 1.25s linear infinite, final 0.2s 4s forwards, spot-6 0.7s 10.18s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(7) {\n  top: 7px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.25s linear infinite, final 0.2s 4s forwards, spot-7 0.7s 11.2s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.25s linear infinite, final 0.2s 4s forwards, spot-7 0.7s 11.2s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(8) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.25s linear infinite, final 0.2s 4s forwards, spot-8 0.7s 10.8s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.25s linear infinite, final 0.2s 4s forwards, spot-8 0.7s 10.8s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(9) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 5.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.05s linear infinite, final 0.2s 4s forwards, spot-9 0.7s 10.5571428571s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.05s linear infinite, final 0.2s 4s forwards, spot-9 0.7s 10.5571428571s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(10) {\n  top: 7px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.75s linear infinite, final 0.2s 4s forwards, spot-10 0.7s 10.78s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.75s linear infinite, final 0.2s 4s forwards, spot-10 0.7s 10.78s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(11) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.35s linear infinite, final 0.2s 4s forwards, spot-11 0.7s 10.18s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.35s linear infinite, final 0.2s 4s forwards, spot-11 0.7s 10.18s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(12) {\n  top: 14px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.75s linear infinite, final 0.2s 4s forwards, spot-12 0.7s 10.6s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.75s linear infinite, final 0.2s 4s forwards, spot-12 0.7s 10.6s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(13) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-13 0.7s 10.58s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-13 0.7s 10.58s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(14) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 0.65s linear infinite, final 0.2s 4s forwards, spot-14 0.7s 10.9s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 0.65s linear infinite, final 0.2s 4s forwards, spot-14 0.7s 10.9s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(15) {\n  top: 12px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.75s linear infinite, final 0.2s 4s forwards, spot-15 0.7s 11.4s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.75s linear infinite, final 0.2s 4s forwards, spot-15 0.7s 11.4s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(16) {\n  top: 14px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 7px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.55s linear infinite, final 0.2s 4s forwards, spot-16 0.7s 10.8s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.55s linear infinite, final 0.2s 4s forwards, spot-16 0.7s 10.8s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(17) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.25s linear infinite, final 0.2s 4s forwards, spot-17 0.7s 10.9333333333s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.25s linear infinite, final 0.2s 4s forwards, spot-17 0.7s 10.9333333333s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(18) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.05s linear infinite, final 0.2s 4s forwards, spot-18 0.7s 10.78s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.05s linear infinite, final 0.2s 4s forwards, spot-18 0.7s 10.78s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(19) {\n  top: 8px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.55s linear infinite, final 0.2s 4s forwards, spot-19 0.7s 10.25s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.55s linear infinite, final 0.2s 4s forwards, spot-19 0.7s 10.25s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(20) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.75s linear infinite, final 0.2s 4s forwards, spot-20 0.7s 11.08s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.75s linear infinite, final 0.2s 4s forwards, spot-20 0.7s 11.08s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(21) {\n  top: 6px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 1.35s linear infinite, final 0.2s 4s forwards, spot-21 0.7s 10.14s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 1.35s linear infinite, final 0.2s 4s forwards, spot-21 0.7s 10.14s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(22) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 1.15s linear infinite, final 0.2s 4s forwards, spot-22 0.7s 10.9444444444s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 1.15s linear infinite, final 0.2s 4s forwards, spot-22 0.7s 10.9444444444s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(23) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 5.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.25s linear infinite, final 0.2s 4s forwards, spot-23 0.7s 11.2s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.25s linear infinite, final 0.2s 4s forwards, spot-23 0.7s 11.2s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(24) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 5.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.95s linear infinite, final 0.2s 4s forwards, spot-24 0.7s 10.34s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.95s linear infinite, final 0.2s 4s forwards, spot-24 0.7s 10.34s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(25) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.35s linear infinite, final 0.2s 4s forwards, spot-25 0.7s 10.3s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.35s linear infinite, final 0.2s 4s forwards, spot-25 0.7s 10.3s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(26) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-26 0.7s 10.9s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-26 0.7s 10.9s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(27) {\n  top: 8px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-27 0.7s 11.0333333333s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-27 0.7s 11.0333333333s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(28) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 0.45s linear infinite, final 0.2s 4s forwards, spot-28 0.7s 11.05s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 0.45s linear infinite, final 0.2s 4s forwards, spot-28 0.7s 11.05s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(29) {\n  top: 8px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 1.15s linear infinite, final 0.2s 4s forwards, spot-29 0.7s 11.3s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 1.15s linear infinite, final 0.2s 4s forwards, spot-29 0.7s 11.3s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(30) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.65s linear infinite, final 0.2s 4s forwards, spot-30 0.7s 10.85s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.65s linear infinite, final 0.2s 4s forwards, spot-30 0.7s 10.85s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(31) {\n  top: 7px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 5.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-31 0.7s 10.44s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-31 0.7s 10.44s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(32) {\n  top: 14px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-32 0.7s 10.68s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.85s linear infinite, final 0.2s 4s forwards, spot-32 0.7s 10.68s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(33) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.15s linear infinite, final 0.2s 4s forwards, spot-33 0.7s 10.54s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.15s linear infinite, final 0.2s 4s forwards, spot-33 0.7s 10.54s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(34) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.65s linear infinite, final 0.2s 4s forwards, spot-34 0.7s 10.3s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.65s linear infinite, final 0.2s 4s forwards, spot-34 0.7s 10.3s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(35) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 1.45s linear infinite, final 0.2s 4s forwards, spot-35 0.7s 10.8s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 1.45s linear infinite, final 0.2s 4s forwards, spot-35 0.7s 10.8s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(36) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 5.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.25s linear infinite, final 0.2s 4s forwards, spot-36 0.7s 10.3s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.25s linear infinite, final 0.2s 4s forwards, spot-36 0.7s 10.3s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(37) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.35s linear infinite, final 0.2s 4s forwards, spot-37 0.7s 11.4s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.35s linear infinite, final 0.2s 4s forwards, spot-37 0.7s 11.4s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(38) {\n  top: 7px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 1.05s linear infinite, final 0.2s 4s forwards, spot-38 0.7s 10.44s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 1.05s linear infinite, final 0.2s 4s forwards, spot-38 0.7s 10.44s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(39) {\n  top: 13px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.15s linear infinite, final 0.2s 4s forwards, spot-39 0.7s 10.8444444444s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.15s linear infinite, final 0.2s 4s forwards, spot-39 0.7s 10.8444444444s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(40) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 0.75s linear infinite, final 0.2s 4s forwards, spot-40 0.7s 11.3s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 0.75s linear infinite, final 0.2s 4s forwards, spot-40 0.7s 11.3s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(41) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-41 0.7s 10.18s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-41 0.7s 10.18s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(42) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.45s linear infinite, final 0.2s 4s forwards, spot-42 0.7s 10.25s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.45s linear infinite, final 0.2s 4s forwards, spot-42 0.7s 10.25s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(43) {\n  top: 14px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 1.05s linear infinite, final 0.2s 4s forwards, spot-43 0.7s 10.4333333333s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 1.05s linear infinite, final 0.2s 4s forwards, spot-43 0.7s 10.4333333333s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(44) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.65s linear infinite, final 0.2s 4s forwards, spot-44 0.7s 10.5444444444s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.65s linear infinite, final 0.2s 4s forwards, spot-44 0.7s 10.5444444444s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(45) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.65s linear infinite, final 0.2s 4s forwards, spot-45 0.7s 10.8571428571s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.65s linear infinite, final 0.2s 4s forwards, spot-45 0.7s 10.8571428571s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(46) {\n  top: 6px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.05s linear infinite, final 0.2s 4s forwards, spot-46 0.7s 11s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.05s linear infinite, final 0.2s 4s forwards, spot-46 0.7s 11s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(47) {\n  top: 12px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.55s linear infinite, final 0.2s 4s forwards, spot-47 0.7s 10.2666666667s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.55s linear infinite, final 0.2s 4s forwards, spot-47 0.7s 10.2666666667s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(48) {\n  top: 6px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 1.45s linear infinite, final 0.2s 4s forwards, spot-48 0.7s 10.8s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 1.45s linear infinite, final 0.2s 4s forwards, spot-48 0.7s 10.8s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(49) {\n  top: 14px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.85s linear infinite, final 0.2s 4s forwards, spot-49 0.7s 10.3444444444s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.85s linear infinite, final 0.2s 4s forwards, spot-49 0.7s 10.3444444444s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(50) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.45s linear infinite, final 0.2s 4s forwards, spot-50 0.7s 10.65s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.45s linear infinite, final 0.2s 4s forwards, spot-50 0.7s 10.65s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(51) {\n  top: 6px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.15s linear infinite, final 0.2s 4s forwards, spot-51 0.7s 10.55s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.15s linear infinite, final 0.2s 4s forwards, spot-51 0.7s 10.55s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(52) {\n  top: 12px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.95s linear infinite, final 0.2s 4s forwards, spot-52 0.7s 10.1444444444s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.95s linear infinite, final 0.2s 4s forwards, spot-52 0.7s 10.1444444444s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(53) {\n  top: 12px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 7px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-53 0.7s 10.4333333333s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-53 0.7s 10.4333333333s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(54) {\n  top: 13px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.75px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 1.25s linear infinite, final 0.2s 4s forwards, spot-54 0.7s 10.5666666667s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 1.25s linear infinite, final 0.2s 4s forwards, spot-54 0.7s 10.5666666667s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(55) {\n  top: 9px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 2.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.4s 0.35s linear infinite, final 0.2s 4s forwards, spot-55 0.7s 10.9s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.4s 0.35s linear infinite, final 0.2s 4s forwards, spot-55 0.7s 10.9s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(56) {\n  top: 11px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 7px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 1.45s linear infinite, final 0.2s 4s forwards, spot-56 0.7s 10.14s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 1.45s linear infinite, final 0.2s 4s forwards, spot-56 0.7s 10.14s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(57) {\n  top: 10px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 5.25px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-57 0.7s 10.5s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.3s 0.35s linear infinite, final 0.2s 4s forwards, spot-57 0.7s 10.5s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(58) {\n  top: 12px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 6px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.55s linear infinite, final 0.2s 4s forwards, spot-58 0.7s 10.85s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.55s linear infinite, final 0.2s 4s forwards, spot-58 0.7s 10.85s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(59) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 3.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.2s 0.85s linear infinite, final 0.2s 4s forwards, spot-59 0.7s 11.2s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.2s 0.85s linear infinite, final 0.2s 4s forwards, spot-59 0.7s 11.2s linear infinite !important;\n}\ninput:checked + label .button_spots:nth-of-type(60) {\n  top: 15px !important;\n  left: -34px !important;\n  opacity: 0;\n  padding: 4.5px !important;\n  -webkit-animation: spew 1s 0.3s forwards, rotate 4.1s 0.75s linear infinite, final 0.2s 4s forwards, spot-60 0.7s 10.5666666667s linear infinite !important;\n          animation: spew 1s 0.3s forwards, rotate 4.1s 0.75s linear infinite, final 0.2s 4s forwards, spot-60 0.7s 10.5666666667s linear infinite !important;\n}\n\n.tick {\n  position: absolute;\n  left: -40;\n  right: 0;\n  transform: scale(0);\n  margin: auto;\n  font-size: 22px;\n}\n\n.button {\n  position: absolute;\n  top: 50%;\n  left: 0;\n  right: 0;\n  margin: auto;\n  text-align: Center;\n  height: 360px;\n  width: 200px;\n  transform: translateY(-50%);\n}\n.button h1 {\n  font-weight: 100;\n  color: White;\n  font-size: 24px;\n  margin: 0;\n  text-transform: uppercase;\n}\n.button h2 {\n  font-weight: 100;\n  color: #00C4FF;\n  opacity: 1;\n  font-size: 14px;\n  margin: 4px 0px 0px 0px;\n}\n.button .b_l_quad .button_spots:nth-child(1) {\n  padding: 4px;\n  left: -13px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(2) {\n  padding: 3px;\n  left: -1px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(3) {\n  padding: 5px;\n  left: 11px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(4) {\n  padding: 4px;\n  left: 23px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(5) {\n  padding: 5px;\n  left: 35px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(6) {\n  padding: 3px;\n  left: 47px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(7) {\n  padding: 3px;\n  left: 59px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(8) {\n  padding: 4px;\n  left: 71px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(9) {\n  padding: 5px;\n  left: 83px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(10) {\n  padding: 5px;\n  left: 95px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(11) {\n  padding: 4px;\n  left: 107px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(12) {\n  padding: 3px;\n  left: 119px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(13) {\n  padding: 3px;\n  left: 131px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(14) {\n  padding: 5px;\n  left: 143px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(15) {\n  padding: 5px;\n  left: 155px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(16) {\n  padding: 4px;\n  left: 167px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(17) {\n  padding: 4px;\n  left: 179px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(18) {\n  padding: 4px;\n  left: 191px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(19) {\n  padding: 5px;\n  left: 203px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(20) {\n  padding: 5px;\n  left: 215px;\n  top: 50px;\n}\n.button .b_l_quad .button_spots:nth-child(20) {\n  padding: 4px;\n  left: -15px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(21) {\n  padding: 4px;\n  left: -3px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(22) {\n  padding: 3px;\n  left: 9px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(23) {\n  padding: 4px;\n  left: 21px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(24) {\n  padding: 3px;\n  left: 33px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(25) {\n  padding: 3px;\n  left: 45px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(26) {\n  padding: 5px;\n  left: 57px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(27) {\n  padding: 3px;\n  left: 69px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(28) {\n  padding: 4px;\n  left: 81px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(29) {\n  padding: 4px;\n  left: 93px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(30) {\n  padding: 4px;\n  left: 105px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(31) {\n  padding: 3px;\n  left: 117px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(32) {\n  padding: 5px;\n  left: 129px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(33) {\n  padding: 4px;\n  left: 141px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(34) {\n  padding: 5px;\n  left: 153px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(35) {\n  padding: 3px;\n  left: 165px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(36) {\n  padding: 5px;\n  left: 177px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(37) {\n  padding: 4px;\n  left: 189px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(38) {\n  padding: 5px;\n  left: 201px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(39) {\n  padding: 4px;\n  left: 213px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(40) {\n  padding: 3px;\n  left: 225px;\n  top: -12px;\n}\n.button .b_l_quad .button_spots:nth-child(40) {\n  padding: 3px;\n  left: 204px;\n  top: -8px;\n}\n.button .b_l_quad .button_spots:nth-child(41) {\n  padding: 3px;\n  left: 204px;\n  top: 4px;\n}\n.button .b_l_quad .button_spots:nth-child(42) {\n  padding: 5px;\n  left: 204px;\n  top: 16px;\n}\n.button .b_l_quad .button_spots:nth-child(43) {\n  padding: 5px;\n  left: 204px;\n  top: 28px;\n}\n.button .b_l_quad .button_spots:nth-child(44) {\n  padding: 3px;\n  left: 204px;\n  top: 40px;\n}\n.button .b_l_quad .button_spots:nth-child(45) {\n  padding: 5px;\n  left: 204px;\n  top: 52px;\n}\n.button .b_l_quad .button_spots:nth-child(46) {\n  padding: 4px;\n  left: 204px;\n  top: 64px;\n}\n.button .b_l_quad .button_spots:nth-child(46) {\n  padding: 5px;\n  left: -10px;\n  top: -16px;\n}\n.button .b_l_quad .button_spots:nth-child(47) {\n  padding: 5px;\n  left: -10px;\n  top: -4px;\n}\n.button .b_l_quad .button_spots:nth-child(48) {\n  padding: 5px;\n  left: -10px;\n  top: 8px;\n}\n.button .b_l_quad .button_spots:nth-child(49) {\n  padding: 5px;\n  left: -10px;\n  top: 20px;\n}\n.button .b_l_quad .button_spots:nth-child(50) {\n  padding: 3px;\n  left: -10px;\n  top: 32px;\n}\n.button .b_l_quad .button_spots:nth-child(51) {\n  padding: 5px;\n  left: -10px;\n  top: 44px;\n}\n.button .b_l_quad .button_spots:nth-child(52) {\n  padding: 3px;\n  left: -10px;\n  top: 56px;\n}\n.button .button_spots {\n  position: absolute;\n  border-radius: 100px;\n  background: green;\n  opacity: 0;\n  -webkit-animation: opacity 1s;\n          animation: opacity 1s;\n}\n.button .button_spots:nth-of-type(1) {\n  transform-origin: 85px 17px;\n  background: #7ad378;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.7s;\n}\n.button .button_spots:nth-of-type(2) {\n  transform-origin: 82px 16px;\n  background: #d6767a;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.9s;\n}\n.button .button_spots:nth-of-type(3) {\n  transform-origin: 89px 19px;\n  background: #d3cf78;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 2s;\n}\n.button .button_spots:nth-of-type(4) {\n  transform-origin: 83px 13px;\n  background: #d17ba9;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.1s;\n}\n.button .button_spots:nth-of-type(5) {\n  transform-origin: 84px 16px;\n  background: #9d78d3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.9s;\n}\n.button .button_spots:nth-of-type(6) {\n  transform-origin: 84px 10px;\n  background: #78d383;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.9s;\n}\n.button .button_spots:nth-of-type(7) {\n  transform-origin: 83px 10px;\n  background: #aad17a;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.4s;\n}\n.button .button_spots:nth-of-type(8) {\n  transform-origin: 89px 19px;\n  background: #7cd0cd;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.9s;\n}\n.button .button_spots:nth-of-type(9) {\n  transform-origin: 81px 12px;\n  background: #d38c78;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.4s;\n}\n.button .button_spots:nth-of-type(10) {\n  transform-origin: 82px 16px;\n  background: #79d279;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(11) {\n  transform-origin: 89px 19px;\n  background: #84d676;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.6s;\n}\n.button .button_spots:nth-of-type(12) {\n  transform-origin: 85px 13px;\n  background: #a378d3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 2s;\n}\n.button .button_spots:nth-of-type(13) {\n  transform-origin: 81px 13px;\n  background: #7c77d4;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.1s;\n}\n.button .button_spots:nth-of-type(14) {\n  transform-origin: 87px 11px;\n  background: #d39578;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(15) {\n  transform-origin: 88px 13px;\n  background: #a6d874;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.2s;\n}\n.button .button_spots:nth-of-type(16) {\n  transform-origin: 80px 10px;\n  background: #b87bd1;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(17) {\n  transform-origin: 83px 11px;\n  background: #7b7ed1;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.4s;\n}\n.button .button_spots:nth-of-type(18) {\n  transform-origin: 86px 15px;\n  background: #b57bd1;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.7s;\n}\n.button .button_spots:nth-of-type(19) {\n  transform-origin: 84px 13px;\n  background: #7bd1b3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.4s;\n}\n.button .button_spots:nth-of-type(20) {\n  transform-origin: 87px 13px;\n  background: #c976d6;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.3s;\n}\n.button .button_spots:nth-of-type(21) {\n  transform-origin: 84px 19px;\n  background: #d4779e;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.9s;\n}\n.button .button_spots:nth-of-type(22) {\n  transform-origin: 87px 11px;\n  background: #d775bb;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.7s;\n}\n.button .button_spots:nth-of-type(23) {\n  transform-origin: 87px 19px;\n  background: #76a6d6;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.3s;\n}\n.button .button_spots:nth-of-type(24) {\n  transform-origin: 88px 12px;\n  background: #77d4c3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 2s;\n}\n.button .button_spots:nth-of-type(25) {\n  transform-origin: 80px 17px;\n  background: #89d17b;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.8s;\n}\n.button .button_spots:nth-of-type(26) {\n  transform-origin: 87px 15px;\n  background: #749ad8;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.8s;\n}\n.button .button_spots:nth-of-type(27) {\n  transform-origin: 83px 10px;\n  background: #78acd3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.1s;\n}\n.button .button_spots:nth-of-type(28) {\n  transform-origin: 81px 13px;\n  background: #b776d6;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.7s;\n}\n.button .button_spots:nth-of-type(29) {\n  transform-origin: 84px 10px;\n  background: #bbd07c;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.4s;\n}\n.button .button_spots:nth-of-type(30) {\n  transform-origin: 86px 19px;\n  background: #d07cb2;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.4s;\n}\n.button .button_spots:nth-of-type(31) {\n  transform-origin: 80px 15px;\n  background: #79d2b3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(32) {\n  transform-origin: 85px 15px;\n  background: #769fd6;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 2s;\n}\n.button .button_spots:nth-of-type(33) {\n  transform-origin: 89px 18px;\n  background: #bd7ad1;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(34) {\n  transform-origin: 83px 19px;\n  background: #79d2aa;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 2s;\n}\n.button .button_spots:nth-of-type(35) {\n  transform-origin: 82px 17px;\n  background: #b976d6;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.8s;\n}\n.button .button_spots:nth-of-type(36) {\n  transform-origin: 81px 17px;\n  background: #7691d6;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 2s;\n}\n.button .button_spots:nth-of-type(37) {\n  transform-origin: 85px 16px;\n  background: #80d17a;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.1s;\n}\n.button .button_spots:nth-of-type(38) {\n  transform-origin: 84px 10px;\n  background: #d8748b;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.1s;\n}\n.button .button_spots:nth-of-type(39) {\n  transform-origin: 84px 13px;\n  background: #d3787d;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.1s;\n}\n.button .button_spots:nth-of-type(40) {\n  transform-origin: 88px 12px;\n  background: #d676a1;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.7s;\n}\n.button .button_spots:nth-of-type(41) {\n  transform-origin: 89px 18px;\n  background: #d5767a;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.1s;\n}\n.button .button_spots:nth-of-type(42) {\n  transform-origin: 85px 17px;\n  background: #b8d874;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(43) {\n  transform-origin: 80px 11px;\n  background: #80d07c;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(44) {\n  transform-origin: 84px 19px;\n  background: #7484d8;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.9s;\n}\n.button .button_spots:nth-of-type(45) {\n  transform-origin: 82px 17px;\n  background: #bdd378;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 2s;\n}\n.button .button_spots:nth-of-type(46) {\n  transform-origin: 88px 14px;\n  background: #96d477;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.8s;\n}\n.button .button_spots:nth-of-type(47) {\n  transform-origin: 87px 10px;\n  background: #d17a96;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.5s;\n}\n.button .button_spots:nth-of-type(48) {\n  transform-origin: 81px 17px;\n  background: #7bd279;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.9s;\n}\n.button .button_spots:nth-of-type(49) {\n  transform-origin: 81px 10px;\n  background: #7cd0c3;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.4s;\n}\n.button .button_spots:nth-of-type(50) {\n  transform-origin: 85px 17px;\n  background: #a1d874;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.6s;\n}\n.button .button_spots:nth-of-type(51) {\n  transform-origin: 86px 19px;\n  background: #7bd1b0;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.6s;\n}\n.button .button_spots:nth-of-type(52) {\n  transform-origin: 80px 16px;\n  background: #d279cb;\n  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.12);\n  transition: all 1.2s;\n}\n.button_inner {\n  border-radius: 2px;\n  position: absolute;\n  width: 200px;\n  height: 50px;\n  left: 0;\n  right: 0;\n  top: 50%;\n  margin: auto;\n  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04);\n  font-weight: 100;\n  font-size: 12px;\n  cursor: pointer;\n  border: 2px solid #FFFFFF;\n  color: white;\n  text-align: Center;\n  transition: all 0.3s, box-shadow 0.2s, transform 0.2s 0.2s;\n}\n.button_inner span.t {\n  position: relative;\n  top: 6px;\n  opacity: 1;\n  left: -10px;\n  transition: left 0.4s 0.1s;\n}\n.button_inner i.l {\n  position: relative;\n  left: -19px;\n  top: 20px;\n  color: #00C4FF;\n  font-size: 25px;\n  opacity: 0;\n  transition: left 0.3s 0s, top 0.3s 0s, opacity 0.3s 0s;\n}\n.button_inner:hover {\n  color: #2C3940;\n  background: white;\n  box-shadow: 0px 17px 18px -14px rgba(0, 0, 0, 0.08);\n}\n.button_inner:hover span.t {\n  left: 16px;\n  transition: left 0.4s;\n}\n.button_inner:hover i.l {\n  top: 12px;\n  opacity: 1;\n  transition: left 0.3s 0s, top 0.3s 0.1s, opacity 0.3s 0.1s;\n}\n.button_inner:hover .button_spots:nth-of-type(1) {\n  -webkit-animation: spot-1 0.7s 0.38s linear infinite;\n          animation: spot-1 0.7s 0.38s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(2) {\n  -webkit-animation: spot-2 0.7s 0.8571428571s linear infinite;\n          animation: spot-2 0.7s 0.8571428571s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(3) {\n  -webkit-animation: spot-3 0.7s 0.8571428571s linear infinite;\n          animation: spot-3 0.7s 0.8571428571s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(4) {\n  -webkit-animation: spot-4 0.7s 0.8s linear infinite;\n          animation: spot-4 0.7s 0.8s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(5) {\n  -webkit-animation: spot-5 0.7s 0.8333333333s linear infinite;\n          animation: spot-5 0.7s 0.8333333333s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(6) {\n  -webkit-animation: spot-6 0.7s 0.4666666667s linear infinite;\n          animation: spot-6 0.7s 0.4666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(7) {\n  -webkit-animation: spot-7 0.7s 0.55s linear infinite;\n          animation: spot-7 0.7s 0.55s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(8) {\n  -webkit-animation: spot-8 0.7s 1s linear infinite;\n          animation: spot-8 0.7s 1s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(9) {\n  -webkit-animation: spot-9 0.7s 0.8571428571s linear infinite;\n          animation: spot-9 0.7s 0.8571428571s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(10) {\n  -webkit-animation: spot-10 0.7s 1.2s linear infinite;\n          animation: spot-10 0.7s 1.2s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(11) {\n  -webkit-animation: spot-11 0.7s 0.8666666667s linear infinite;\n          animation: spot-11 0.7s 0.8666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(12) {\n  -webkit-animation: spot-12 0.7s 0.4s linear infinite;\n          animation: spot-12 0.7s 0.4s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(13) {\n  -webkit-animation: spot-13 0.7s 0.8s linear infinite;\n          animation: spot-13 0.7s 0.8s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(14) {\n  -webkit-animation: spot-14 0.7s 0.4s linear infinite;\n          animation: spot-14 0.7s 0.4s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(15) {\n  -webkit-animation: spot-15 0.7s 0.5s linear infinite;\n          animation: spot-15 0.7s 0.5s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(16) {\n  -webkit-animation: spot-16 0.7s 0.9s linear infinite;\n          animation: spot-16 0.7s 0.9s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(17) {\n  -webkit-animation: spot-17 0.7s 0.85s linear infinite;\n          animation: spot-17 0.7s 0.85s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(18) {\n  -webkit-animation: spot-18 0.7s 0.58s linear infinite;\n          animation: spot-18 0.7s 0.58s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(19) {\n  -webkit-animation: spot-19 0.7s 1.1333333333s linear infinite;\n          animation: spot-19 0.7s 1.1333333333s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(20) {\n  -webkit-animation: spot-20 0.7s 0.2666666667s linear infinite;\n          animation: spot-20 0.7s 0.2666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(21) {\n  -webkit-animation: spot-21 0.7s 0.2444444444s linear infinite;\n          animation: spot-21 0.7s 0.2444444444s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(22) {\n  -webkit-animation: spot-22 0.7s 0.28s linear infinite;\n          animation: spot-22 0.7s 0.28s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(23) {\n  -webkit-animation: spot-23 0.7s 0.58s linear infinite;\n          animation: spot-23 0.7s 0.58s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(24) {\n  -webkit-animation: spot-24 0.7s 0.94s linear infinite;\n          animation: spot-24 0.7s 0.94s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(25) {\n  -webkit-animation: spot-25 0.7s 1.2s linear infinite;\n          animation: spot-25 0.7s 1.2s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(26) {\n  -webkit-animation: spot-26 0.7s 0.65s linear infinite;\n          animation: spot-26 0.7s 0.65s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(27) {\n  -webkit-animation: spot-27 0.7s 0.74s linear infinite;\n          animation: spot-27 0.7s 0.74s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(28) {\n  -webkit-animation: spot-28 0.7s 0.3s linear infinite;\n          animation: spot-28 0.7s 0.3s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(29) {\n  -webkit-animation: spot-29 0.7s 0.14s linear infinite;\n          animation: spot-29 0.7s 0.14s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(30) {\n  -webkit-animation: spot-30 0.7s 0.6666666667s linear infinite;\n          animation: spot-30 0.7s 0.6666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(31) {\n  -webkit-animation: spot-31 0.7s 0.5444444444s linear infinite;\n          animation: spot-31 0.7s 0.5444444444s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(32) {\n  -webkit-animation: spot-32 0.7s 0.88s linear infinite;\n          animation: spot-32 0.7s 0.88s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(33) {\n  -webkit-animation: spot-33 0.7s 1.1s linear infinite;\n          animation: spot-33 0.7s 1.1s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(34) {\n  -webkit-animation: spot-34 0.7s 0.7s linear infinite;\n          animation: spot-34 0.7s 0.7s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(35) {\n  -webkit-animation: spot-35 0.7s 0.6666666667s linear infinite;\n          animation: spot-35 0.7s 0.6666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(36) {\n  -webkit-animation: spot-36 0.7s 0.68s linear infinite;\n          animation: spot-36 0.7s 0.68s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(37) {\n  -webkit-animation: spot-37 0.7s 0.7s linear infinite;\n          animation: spot-37 0.7s 0.7s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(38) {\n  -webkit-animation: spot-38 0.7s 0.45s linear infinite;\n          animation: spot-38 0.7s 0.45s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(39) {\n  -webkit-animation: spot-39 0.7s 0.9666666667s linear infinite;\n          animation: spot-39 0.7s 0.9666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(40) {\n  -webkit-animation: spot-40 0.7s 1.0444444444s linear infinite;\n          animation: spot-40 0.7s 1.0444444444s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(40) {\n  -webkit-animation: spot-40 0.7s 0.6333333333s linear infinite;\n          animation: spot-40 0.7s 0.6333333333s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(41) {\n  -webkit-animation: spot-41 0.7s 1.04s linear infinite;\n          animation: spot-41 0.7s 1.04s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(42) {\n  -webkit-animation: spot-42 0.7s 0.3666666667s linear infinite;\n          animation: spot-42 0.7s 0.3666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(43) {\n  -webkit-animation: spot-43 0.7s 1s linear infinite;\n          animation: spot-43 0.7s 1s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(44) {\n  -webkit-animation: spot-44 0.7s 0.4666666667s linear infinite;\n          animation: spot-44 0.7s 0.4666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(45) {\n  -webkit-animation: spot-45 0.7s 0.78s linear infinite;\n          animation: spot-45 0.7s 0.78s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(46) {\n  -webkit-animation: spot-46 0.7s 0.64s linear infinite;\n          animation: spot-46 0.7s 0.64s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(46) {\n  -webkit-animation: spot-46 0.7s 0.38s linear infinite;\n          animation: spot-46 0.7s 0.38s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(47) {\n  -webkit-animation: spot-47 0.7s 1s linear infinite;\n          animation: spot-47 0.7s 1s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(48) {\n  -webkit-animation: spot-48 0.7s 0.2666666667s linear infinite;\n          animation: spot-48 0.7s 0.2666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(49) {\n  -webkit-animation: spot-49 0.7s 0.45s linear infinite;\n          animation: spot-49 0.7s 0.45s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(50) {\n  -webkit-animation: spot-50 0.7s 0.8666666667s linear infinite;\n          animation: spot-50 0.7s 0.8666666667s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(51) {\n  -webkit-animation: spot-51 0.7s 0.8444444444s linear infinite;\n          animation: spot-51 0.7s 0.8444444444s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(52) {\n  -webkit-animation: spot-52 0.7s 1.2s linear infinite;\n          animation: spot-52 0.7s 1.2s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(53) {\n  -webkit-animation: spot-53 0.7s 0.2444444444s linear infinite;\n          animation: spot-53 0.7s 0.2444444444s linear infinite;\n}\n.button_inner:hover .button_spots:nth-of-type(54) {\n  -webkit-animation: spot-54 0.7s 0.6s linear infinite;\n          animation: spot-54 0.7s 0.6s linear infinite;\n}\n\n@-webkit-keyframes spot-1 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-18px);\n    opacity: 0.6;\n  }\n}\n\n@keyframes spot-1 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-18px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-2 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-16px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-2 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-16px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-3 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-14px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-3 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-14px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-4 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-12px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-4 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-12px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-5 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-10px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-5 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-10px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-6 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-8px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-6 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-8px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-7 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-6px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-7 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-6px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-8 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-4px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-8 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-4px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-9 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-2px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-9 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(-2px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-10 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(0px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-10 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(0px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-11 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(2px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-11 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(2px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-12 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(4px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-12 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(4px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-13 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(6px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-13 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(6px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-14 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(8px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-14 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(8px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-15 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(10px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-15 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(10px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-16 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(12px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-16 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(12px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-17 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(14px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-17 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(14px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-18 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(16px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-18 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(16px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-19 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(18px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-19 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(18px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-20 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(20px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-20 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(30px) translatex(20px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-20 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-10px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-21 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-8px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-21 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-8px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-22 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-6px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-22 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-6px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-23 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-4px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-23 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-4px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-24 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-2px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-24 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(-2px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-25 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(0px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-25 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(0px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-26 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(2px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-26 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(2px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-27 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(4px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-27 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(4px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-28 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(6px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-28 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(6px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-29 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(8px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-29 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(8px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-30 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(10px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-30 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(10px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-31 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(12px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-31 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(12px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-32 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(14px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-32 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(14px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-33 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(16px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-33 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(16px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-34 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(18px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-34 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(18px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-35 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(20px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-35 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(20px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-36 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(22px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-36 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(22px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-37 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(24px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-37 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(24px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-38 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(26px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-38 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(26px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-39 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(28px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-39 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(28px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-40 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(30px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-40 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-30px) translatex(30px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-40 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-6px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-41 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-4px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-41 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-4px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-42 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-2px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-42 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-2px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-43 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(0px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-43 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(0px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-44 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(2px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-44 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(2px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-45 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(4px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-45 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(4px) translatex(40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-46 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-7px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-46 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-7px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-47 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-5px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-47 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-5px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-48 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-3px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-48 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-3px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-49 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-1px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-49 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(-1px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-50 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(1px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-50 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(1px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-51 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(3px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-51 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(3px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-52 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(5px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-52 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(5px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-53 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(7px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-53 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(7px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes spot-54 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(9px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@keyframes spot-54 {\n  from {\n    opacity: 0;\n  }\n  to {\n    transform: translateY(9px) translatex(-40px);\n    opacity: 0.6;\n  }\n}\n@-webkit-keyframes opacity {\n  to {\n    opacity: 0;\n  }\n}\n@keyframes opacity {\n  to {\n    opacity: 0;\n  }\n}\n@-webkit-keyframes rotate {\n  from {\n    opacity: 0.8;\n  }\n  to {\n    transform: rotate(360deg);\n    opacity: 0.8;\n  }\n}\n@keyframes rotate {\n  from {\n    opacity: 0.8;\n  }\n  to {\n    transform: rotate(360deg);\n    opacity: 0.8;\n  }\n}\n@-webkit-keyframes down {\n  from {\n    left: 10px;\n  }\n  to {\n    left: 57px;\n  }\n}\n@keyframes down {\n  from {\n    left: 10px;\n  }\n  to {\n    left: 57px;\n  }\n}\n@-webkit-keyframes spew {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 0.8;\n  }\n}\n@keyframes spew {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 0.8;\n  }\n}\n@-webkit-keyframes final {\n  from {\n    opacity: 1;\n  }\n  to {\n    opacity: 0;\n  }\n}\n@keyframes final {\n  from {\n    opacity: 1;\n  }\n  to {\n    opacity: 0;\n  }\n}\n@-webkit-keyframes finalbox {\n  to {\n    width: 50px;\n  }\n}\n@keyframes finalbox {\n  to {\n    width: 50px;\n  }\n}\n@-webkit-keyframes tick {\n  to {\n    transform: scale(1) rotate(-90deg);\n  }\n}\n@keyframes tick {\n  to {\n    transform: scale(1) rotate(-90deg);\n  }\n}","js":""};
+    __preprocessors = {
+      "html": "haml",
+      "css": "scss",
+      "js": "babel"
+    };
+    __preprocessorNames = {
+      "html": "Haml",
+      "css": "SCSS",
+      "js": "Babel"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="https://cpwebassets.codepen.io/assets/embed/embed-e369dee9e85a1a53638c341339102b70938d2f103a2252bc1bf4c7ec1dc26212.js"></script>
+</body>
+</html>
